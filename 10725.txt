@@ -1,0 +1,53 @@
+Task 1
+add user
+add pass
+create directory of the user (employee, add alex)
+verify the details of the user
+
+docker pull ubuntu
+docker run -it ubuntu
+apt update
+apt install -y sudo
+apt install passwd
+sudo useradd -m username
+sudo passwd username
+sudo mkdir /home/username/alex
+id Alex
+
+Task 2
+add 3 users
+add group
+add users to group
+verify if the users are added to the group
+
+docker pull ubuntu
+docker run -it ubuntu
+apt update
+apt install -y sudo
+apt install passwd
+sudo useradd -m username
+sudo passwd username
+sudo groupadd groupname
+sudo usermod -aG groupname username
+getent group groupname
+
+Task 3
+set up docker
+add user
+add pass
+create directory
+add file (ProjetFile)
+add text "Project plan draft"
+call file
+
+docker pull ubuntu
+docker run -it ubuntu
+apt update
+apt install -y sudo
+apt install passwd
+sudo useradd -m username
+sudo passwd username
+sudo mkdir /home/username/project_directory
+sudo touch /home/username/project_directory/ProjectFile
+sudo echo "Project plan draft" > /home/username/project_directory/ProjectFile
+cat /home/username/project_directory/ProjectFile

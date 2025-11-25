@@ -1,0 +1,19 @@
+Task
+1. Check system uptime
+2. View running processes
+3. Display disk usage
+4. Check memory usage
+5. Monitor real-time processes (using htop)
+6. View logged-in users
+7. Check recent system logs
+
+Commands
+uptime
+ps aux --sort=-%cpu | head -15
+df -h
+free -h
+sudo apt update
+sudo apt install -y htop
+htop
+w
+sudo tail -20 /var/log/syslog
